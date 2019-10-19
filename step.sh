@@ -25,4 +25,4 @@ mkdir "$test_run_dir"
 swiftlint lint --reporter checkstyle --quiet > "$test_run_dir/checkstyle.xml"
 sed -e s/\/Users\/vagrant\/git\///g -i "$test_run_dir/checkstyle.xml"
 
-echo '{"test-name":""}' >> "$test_run_dir/test-info.json"
+echo '{"test-name":"main"}' >> "$test_run_dir/test-info.json"
